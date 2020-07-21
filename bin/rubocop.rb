@@ -1,12 +1,13 @@
+require './lib/department.rb'
 require './lib/naming.rb'
 
 def get_file(filename)
   file = filename
-  name_inst = Naming.new
   line_num = 0
   File.readlines(file).each do |line|
+    name_var = Naming.new(line, file, line_num)
     line_num += 1
-    name_inst.var_name(line, file, line_num)
+    name_var.var_name
   end
 end
 
