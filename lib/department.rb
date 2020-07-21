@@ -1,7 +1,7 @@
 require 'colorize'
 
 class Department
-  attr_accessor :file, :line, :line_num, :keywords, :good_var_name, :bad_var_name
+  attr_reader :file, :line, :line_num, :keywords, :good_var_name, :bad_var_name
   def initialize(line, file, line_num)
     @line = line
     @file = file
