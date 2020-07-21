@@ -8,6 +8,7 @@ def get_file(filename)
     name_var = Naming.new(line, file, line_num)
     line_num += 1
     name_var.var_name
+    name_var.method_name
   end
 end
 
