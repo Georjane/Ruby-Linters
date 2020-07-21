@@ -12,4 +12,11 @@ def get_file(filename)
   end
 end
 
-get_file('test.rb')
+def output
+  puts "Inspecting 1 file\n\n\nOffenses:\n\n"
+  get_file('test.rb')
+  puts '1 file inspected, ' + "offenses".red + ' detected'
+end
+
+output
+
