@@ -2,12 +2,14 @@ require './lib/department.rb'
 require './lib/naming.rb'
 
 def get_file(file)
-  line_num = 0
+  line_num = 1
   File.readlines(file).each do |line|
     name_check = Naming.new(line, file, line_num)
     line_num += 1
     name_check.var_name
     name_check.method_name
+    name_check.class_name
+    name_check.module_name
   end
 end
 
@@ -18,4 +20,3 @@ def rubocop
 end
 
 rubocop
-
