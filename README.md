@@ -103,6 +103,12 @@ module MyModule
 end
 ```
 
+## 2. Department Metrics
+
+<p>Metrics cops deal with properties of the source code that can be measured, such as class length, method length, etc. Generally speaking, they have a configuration parameter called <b>Max</b> and when running rubocop <i>--auto-gen-config</i>, this parameter will be set to the highest value found for the inspected code. In this linter, Max value has being set to 10.</p>
+
+#### - Metrics/BlockLength
+This cop checks if the length of a block exceeds some maximum value. Comment lines can optionally be ignored.
 ## ✒️  Author <a name = "author"></a>
 
 👤 **Witah Georjane**
