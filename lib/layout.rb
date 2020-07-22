@@ -5,9 +5,12 @@ class Layout < Department
       if arr[i + 1] == arr[i] + 1
         print file.blue + ':' + arr[i + 1].to_s + ':' + 1.to_s
         print ':' + ' C'.colorize(:yellow)
-        print ": C: Layout/EmptyLines: Extra blank line detected.\n\n"
+        print ": Layout/EmptyLines: Extra blank line detected.\n"
       end
       i += 1
     end
+  end
+
+  def empty_line_between_defs
   end
 end
