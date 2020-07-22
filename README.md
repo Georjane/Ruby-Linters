@@ -10,6 +10,9 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/WittyJany?label=Follow%20Jane%20on%20Twitter&style=social)](https://twitter.com/WittyJany)
 
 </div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rubocop-hq/rubocop/master/logo/rubo-logo-horizontal.png" alt="RuboCop Logo"/>
+</p>
 
 ---
 
@@ -26,8 +29,6 @@
 ## 🧐 About <a name = "about"></a>
 <h3 align="center">
 This is a code linter like Rubocop that trawls through your code files and finds problems, such as methods with too many lines, code style violations, or common gotchas.</h3>
-
-![screenshot]()
 
 ---
 
