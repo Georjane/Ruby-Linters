@@ -45,5 +45,14 @@ class Naming < Department
     print ": Naming/ClassAndModuleCamelCase: Use CamelCase for classes and modules.\n" + line + "\n\n"
   end
 
+    def module_name
+    return unless line.split.first == keywords[4]
 
+    class_na = line[((line =~ /class/) + 7)..-1]
+    return if class_na.match?(good_camel_case)
+
+    @error_index = ((line =~ /class/) + 8)
+    error_message
+    print ": Naming/ClassAndModuleCamelCase: Use CamelCase for classes and modules.\n" + line + "\n\n"
+  end
 end
