@@ -109,6 +109,25 @@ end
 
 #### - Metrics/BlockLength
 This cop checks if the length of a block exceeds some maximum value. Comment lines can optionally be ignored.
+
+## 3. Department Layout
+
+<p>Layout cops inspect your code for consistent use of indentation, alignment, and white space.</p>
+
+#### - Layout/EmptyLines
+This cop checks for two or more consecutive blank lines.
+```
+# bad - It has two empty lines.
+my_method
+
+
+some_method
+
+# good
+some_method
+
+some_method
+```
 ## ✒️  Author <a name = "author"></a>
 
 👤 **Witah Georjane**
