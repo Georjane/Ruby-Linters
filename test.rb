@@ -1,4 +1,6 @@
 module MyGoodClass
+
+  
   def my_Method
     my_var = "a test for processing files"
     puts 'This is ' + my_var
@@ -8,5 +10,7 @@ module MyGoodClass
       mY_wrong23_VAR = 0
     
   end
+
+
 end
 
