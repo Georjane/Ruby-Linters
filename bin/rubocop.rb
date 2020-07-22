@@ -9,40 +9,36 @@ def get_file(file)
   File.readlines(file).each do |line|
     name_check = Naming.new(line, file, line_num)
     line_num += 1
-    if line.split.empty?
-      arr << line_num
-    end
+    arr << line_num if line.split.empty?
     name_check.var_name
     name_check.method_name
     name_check.class_name
     name_check.module_name
-    # metrics_check = Metrics.new(line, file, line_num)
-    # metrics_check.block_length
   end
   layout_check = Layout.new(nil, file, line_num)
   layout_check.empty_lines(arr)
+  metrics_length(file)
 end
 
-# def get_file(file)
-#   line_num = 0
-#   f = File.open(file, "r")
-#   arr = []
-#   f.each_line { |line|
-#     line_num += 1    
-#     if line.split.empty?
-#       arr << line_num
-#     end    
-#   }
-#   layout_check = Layout.new(nil, file, line_num)
-    
-#   layout_check.empty_lines(arr)
-#   f.close
-# end
+def metrics_length(file)
+  line_num = 0
+  f = File.open(file, 'r')
+  def_hash = {}
+  end_hash = {}
+  metrics_check = Metrics.new(nil, file, line_num)
+  f.each_line do |line|
+    line_num += 1
+    def_hash[line_num] = line =~ /def/ if %w[def].include?(line.split.first)
+    end_hash[line_num] = line =~ /end/ if %w[end].include?(line.split.first)
+  end
+  metrics_check.block_length(def_hash, end_hash)
+  f.close
+end
 
 def rubocop
   puts "Inspecting 1 file\n\n\nOffenses:\n\n"
   get_file('test.rb')
-  puts '1 file inspected, ' + "offenses".red + ' detected'
+  puts '1 file inspected, ' + 'offenses'.red + ' detected'
 end
 
 rubocop

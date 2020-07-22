@@ -25,10 +25,6 @@ class Naming < Department
     @error_index = ((line =~ bad_snake_case) + 1)
   end
 
-  def error_index_camel_case
-    @error_index = ((line =~ bad_camel_case) + 1)
-  end
-
   def error_message
     print file.blue + ':' + line_num.to_s + ':' + @error_index.to_s
     print ':' + ' C'.colorize(:yellow)

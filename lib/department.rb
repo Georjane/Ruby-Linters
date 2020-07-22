@@ -10,5 +10,5 @@ class Department
     @good_snake_case = /^[a-z]+_[a-z]+(_[a-z]+)?$/
     @bad_snake_case = /[a-zA-Z\d]+_[a-zA-Z\d]+(_[a-zA-Z]+)?/
     @good_camel_case = /^[A-Z][A-Za-z\d]+$/
-  end  
+  end
 end
