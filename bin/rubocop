@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require './files.rb'
 
 def get_file(file)
@@ -7,13 +8,13 @@ def get_file(file)
     name_check = Naming.new(line, file, line_num)
     line_num += 1
     arr << line_num if line.split.empty?
-    name_check.var_name
-    name_check.method_name
-    name_check.class_name
-    name_check.module_name
+    print name_check.var_name
+    print name_check.method_name
+    print name_check.class_name
+     print name_check.module_name
   end
   layout_check = Layout.new(nil, file, line_num)
-  layout_check.empty_lines(arr)
+  print layout_check.empty_lines(arr)
   metrics_length(file)
 end
 
@@ -38,4 +39,4 @@ def rubocop
   puts '1 file inspected, ' + 'offenses'.red + ' detected'
 end
 
-# rubocop
+rubocop

@@ -1,5 +1,25 @@
-require './bin/rubocop.rb'
-# require './examples.rb'
+require './bin/rubocop'
+
+# describe Naming do
+#   let(:file) { 'examples.rb' }
+#   # let(:lines_array) do
+#   #   arr = []
+#   #   File.readlines(file).each do |line|
+#   #     arr << line.chomp!
+#   #   end
+#   # end
+#   describe '#var_name' do
+#     it 'checks if variable names are in snake_case' do
+#       line_num = 1
+#       File.readlines(file).each do |line|
+#         name_check = Naming.new(line, file, line_num)
+#         line_num += 1
+        
+#       expect(print name_check.var_name).to eq (file.blue + ':' + 3.to_s + ':' + 2.to_s + ':' + ' C'.yellow + ": Naming/MethodName: Use snake_case for method names.\n  " + "my_varR23H\n\n")
+#       end
+#     end
+#   end
+# end
 
 describe Layout do
   let(:file) { 'examples.rb' }

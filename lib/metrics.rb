@@ -18,8 +18,7 @@ class Metrics < Department
     end
     length.each { |q| y << q if q > @max }
     while r < final.length
-      print file.blue + ':' + final[r].to_s + ':' + 1.to_s + ':' + ' C'.colorize(:yellow)
-      print ': Metrics/MethodLength: Method has too many lines. [' + y[r].to_s + '/' + @max.to_s + "]\n\n"
+      print file.blue + ':' + final[r].to_s + ':' + 1.to_s + ':' + ' C'.colorize(:yellow) + ': Metrics/MethodLength: Method has too many lines. [' + y[r].to_s + '/' + @max.to_s + "]\n\n"
       r += 1
     end
   end
