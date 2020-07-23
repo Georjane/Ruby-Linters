@@ -1,6 +1,9 @@
 class Metrics < Department
-  private
   def block_length(def_hash, end_hash)
+    check_length(def_hash, end_hash)
+  end
+
+  def check_length(def_hash, end_hash)
     @max = 10
     length, final, y = Array.new(3) { [] }
     i = 0
@@ -22,5 +25,6 @@ class Metrics < Department
       print file.blue + ':' + final[r].to_s + ':' + 1.to_s + ':' + ' C'.colorize(:yellow) + ': Metrics/MethodLength: Method has too many lines. [' + y[r].to_s + '/' + @max.to_s + "]\n\n"
       r += 1
     end
+    y.length
   end
 end
