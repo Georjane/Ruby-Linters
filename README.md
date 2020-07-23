@@ -1,4 +1,4 @@
-<h3 align="center">Ruby-Linters</h3>
+<h1 align="center">My-Ruby-Linters</h1>
 
 <div align="center">
 
