@@ -1,25 +1,21 @@
 require './files.rb'
 
-# describe Naming do
-#   let(:file) { 'examples.rb' }
-#   # let(:lines_array) do
-#   #   arr = []
-#   #   File.readlines(file).each do |line|
-#   #     arr << line.chomp!
-#   #   end
-#   # end
-#   describe '#var_name' do
-#     it 'checks if variable names are in snake_case' do
-#       line_num = 1
-#       File.readlines(file).each do |line|
-#         name_check = Naming.new(line, file, line_num)
-#         line_num += 1
-        
-#       expect(print name_check.var_name).to eq (file.blue + ':' + 3.to_s + ':' + 2.to_s + ':' + ' C'.yellow + ": Naming/MethodName: Use snake_case for method names.\n  " + "my_varR23H\n\n")
-#       end
-#     end
-#   end
-# end
+describe Naming do
+  describe '#var_name and #method_name' do
+    it 'checks if variable and method names are in snake_case' do
+      test = "my_good_var"
+      good_snake_case = /^[a-z]+_[a-z]+(_[a-z]+)?$/
+      expect(test).to match(good_snake_case)
+    end
+
+    it 'checks if variable and method names are in snake_case' do
+      test = "My_BAD_MetHOD11"
+      good_snake_case = /^[a-z]+_[a-z]+(_[a-z]+)?$/
+      expect(test).to_not match(good_snake_case)
+    end
+  end
+
+end
 
 describe Layout do
   let(:file) { 'examples.rb' }
