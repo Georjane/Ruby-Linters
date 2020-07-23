@@ -6,6 +6,7 @@ AllCops:
     - "test.rb"
     - "examples.rb"
 
+
   DisplayCopNames: true
 
 Layout/LineLength:

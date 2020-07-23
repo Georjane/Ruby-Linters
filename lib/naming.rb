@@ -8,8 +8,7 @@ class Naming < Department
     return if var_line.split.last.match?(good_snake_case)
 
     error_index_snake_case
-    error_message
-    print ": Naming/VariableName: Use snake_case for variable names.\n  " + var_line.split.last + "\n\n"
+    error_message + ": Naming/VariableName: Use snake_case for variable names.\n  " + var_line.split.last + "\n\n"
   end
 
   def method_name
@@ -17,8 +16,7 @@ class Naming < Department
     return if line.split.last.match?(good_snake_case)
 
     error_index_snake_case
-    error_message
-    print ": Naming/MethodName: Use snake_case for method names.\n  " + line.split.last + "\n\n"
+    error_message + ": Naming/MethodName: Use snake_case for method names.\n  " + line.split.last + "\n\n"
   end
 
   def error_index_snake_case
@@ -26,8 +24,7 @@ class Naming < Department
   end
 
   def error_message
-    print file.blue + ':' + line_num.to_s + ':' + @error_index.to_s
-    print ':' + ' C'.colorize(:yellow)
+    file.blue + ':' + line_num.to_s + ':' + @error_index.to_s + ':' + ' C'.yellow
   end
 
   def class_name
@@ -37,8 +34,7 @@ class Naming < Department
     return if class_na.match?(good_camel_case)
 
     @error_index = ((line =~ /class/) + 7)
-    error_message
-    print ": Naming/ClassAndModuleCamelCase: Use CamelCase for classes and modules.\n" + line + "\n\n"
+    error_message + ": Naming/ClassAndModuleCamelCase: Use CamelCase for classes and modules.\n" + line + "\n"
   end
 
   def module_name
@@ -48,7 +44,6 @@ class Naming < Department
     return if class_na.match?(good_camel_case)
 
     @error_index = ((line =~ /module/) + 8)
-    error_message
-    print ": Naming/ClassAndModuleCamelCase: Use CamelCase for classes and modules.\n" + line + "\n\n"
+    error_message + ": Naming/ClassAndModuleCamelCase: Use CamelCase for classes and modules.\n" + line + "\n"
   end
 end
