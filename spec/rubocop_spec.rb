@@ -1,4 +1,5 @@
 require './files.rb'
+require 'colorize'
 
 describe Naming do
   describe '#var_name and #method_name' do
