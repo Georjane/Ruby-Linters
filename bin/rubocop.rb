@@ -1,7 +1,4 @@
-require './lib/department.rb'
-require './lib/naming.rb'
-require './lib/metrics.rb'
-require './lib/layout.rb'
+require './files.rb'
 
 def get_file(file)
   line_num = 1

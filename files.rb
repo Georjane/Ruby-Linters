@@ -1,0 +1,5 @@
+require_relative 'lib/department.rb'
+require_relative 'lib/naming.rb'
+require_relative 'lib/metrics.rb'
+require_relative 'lib/layout.rb'
+require_relative 'lib/colors.rb'
