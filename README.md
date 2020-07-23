@@ -23,10 +23,9 @@
 ## 📝 Content
 <p align="center">
 <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
 <a href="#builtwith">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#installing">Installing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
+</p>
 
 
 ## 🧐 About <a name = "about"></a>
