@@ -1,4 +1,6 @@
+
 <h1 align="center">My-Ruby-Linters</h1>
+
 
 <div align="center">
 
@@ -6,6 +8,7 @@
 [![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/Georjane/Ruby-Linters/issues)
 [![GitHub2 Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/Georjane/Ruby-Linters/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
 [![Made By](https://img.shields.io/badge/Made%20By-Witah%20Georjane-red)](https://github.com/Georjane)
 [![Twitter Follow](https://img.shields.io/twitter/follow/WittyJany?label=Follow%20Witah%20Georjane%20on%20Twitter&style=social)](https://twitter.com/WittyJany)
 
@@ -14,25 +17,28 @@
   <img src="https://raw.githubusercontent.com/rubocop-hq/rubocop/master/logo/rubo-logo-horizontal.png" alt="RuboCop Logo"/>
 </p>
 
+
 ---
 
 ## 📝 Content
 <p align="center">
 <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
 <a href="#builtwith">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#installing">Installing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#styleguide">Style Guide</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#author">Author</a>
-</p>
+
 
 
 ## 🧐 About <a name = "about"></a>
 <h3 align="center">
 This is a code linter like Rubocop that trawls through your code files and finds problems, such as methods with too many lines, code style violations, or common gotchas.</h3>
 
+
 ---
 
 ## 🔧 Built with<a name = "builtwith"></a>
+
+
 
 - [Ruby](https://rubyonrails.org/)
 
@@ -47,13 +53,16 @@ This is a code linter like Rubocop that trawls through your code files and finds
 - Ruby installed on local machine. Please go to [this](https://www.ruby-lang.org/en/documentation/installation/) link if you need to install it.
 
 ### Usage
+
 Clone this repository on the command promp or console using
+
 ```
 git clone https://github.com/Georjane/Ruby-Linters.git
 ```
 ```
 cd Ruby-Linters
 ```
+
 Type in the following command to run the linter on a test file
 ```
 bin/rubocop
@@ -66,10 +75,12 @@ rspec
 # Style Guide <a name = "styleguide"></a>
 ## 1. Department Naming
 
+
 <p>Naming cops check for naming issue of your code, such as method name, constant name, file name, etc.</p>
 
 #### - Naming/VariableName
 This cop makes sure that all variables use the configured style, snake_case for their names.
+
 
 ```
 # bad
@@ -79,8 +90,10 @@ myVar = 5
 my_var = 5
 ```
 
+
 #### - Naming/MethodName
 This cop makes sure that all methods use the configured style, snake_case for their names.
+
 
 ```
 # bad
@@ -93,6 +106,7 @@ def my_method_name
   # code
 end
 ```
+
 #### - Naming/ClassAndModuleCamelCase
 This cop checks for class and module names with an underscore in them.
 ```
@@ -134,6 +148,7 @@ my_method
 
 my_method
 ```
+
 ## ✒️  Author <a name = "author"></a>
 
 👤 **Witah Georjane**
