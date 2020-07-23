@@ -6,8 +6,8 @@
 [![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/Georjane/Ruby-Linters/issues)
 [![GitHub2 Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/Georjane/Ruby-Linters/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-[![Made By](https://img.shields.io/badge/Made%20By-WitahGeorjane-red)](https://github.com/Georjane)
-[![Twitter Follow](https://img.shields.io/twitter/follow/WittyJany?label=Follow%20WitahGeorjane%20on%20Twitter&style=social)](https://twitter.com/WittyJany)
+[![Made By](https://img.shields.io/badge/Made%20By-Witah%20Georjane-red)](https://github.com/Georjane)
+[![Twitter Follow](https://img.shields.io/twitter/follow/WittyJany?label=Follow%20Witah%20Georjane%20on%20Twitter&style=social)](https://twitter.com/WittyJany)
 
 </div>
 <p align="center">
