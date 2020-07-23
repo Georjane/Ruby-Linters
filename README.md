@@ -47,16 +47,21 @@ This is a code linter like Rubocop that trawls through your code files and finds
 - Ruby installed on local machine. Please go to [this](https://www.ruby-lang.org/en/documentation/installation/) link if you need to install it.
 
 ### Usage
-Clone this repository 0n the command promp or console using
+Clone this repository on the command promp or console using
 ```
 git clone https://github.com/Georjane/Ruby-Linters.git
 ```
 ```
 cd Ruby-Linters
 ```
-Type in the following command to run the linter on your file
+Type in the following command to run the linter on a test file
 ```
-ruby rubocop
+bin/rubocop
+```
+### Testing
+Test class methods using RSpec by running the command
+```
+rspec
 ```
 # Style Guide <a name = "styleguide"></a>
 ## 1. Department Naming
@@ -122,12 +127,12 @@ This cop checks for two or more consecutive blank lines.
 my_method
 
 
-some_method
+my_method
 
 # good
-some_method
+my_method
 
-some_method
+my_method
 ```
 ## ✒️  Author <a name = "author"></a>
 
