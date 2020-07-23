@@ -41,7 +41,7 @@ describe Layout do
 
   describe '#empty_lines' do
     context 'checks when there are two or more empty lines consecutively' do
-      it 'detects two empty lines and returns an error message' do
+      it 'detects two or more empty lines and returns an error message' do
         array = []
         layout_check = Layout.new(nil, file, nil)
         lines_array.each_with_index { |x, index| array << index if x.split.empty? }
@@ -50,12 +50,12 @@ describe Layout do
     end
 
     context 'When there is just one empty line' do
+      # fails because test file "example.test" has more than one emptyline, if we re4move empty lines in example.rb, this test will pass
       it 'does not return an error message' do
         array = []
         layout_check = Layout.new(nil, file, nil)
         lines_array.each_with_index { |x, index| array << index if x.split.empty? }
-        expect(layout_check.empty_lines(array)).to eq(nil)
-        # else has to return no errors
+        expect(layout_check.empty_lines(array)).to be_nil
       end
     end
   end
