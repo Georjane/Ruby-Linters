@@ -2,9 +2,10 @@ AllCops:
   Exclude:
     - "Guardfile"
     - "Rakefile"
+    - "lib/colors.rb"
     - "test.rb"
     - "examples.rb"
-    - "lib/colors.rb"
+
 
   DisplayCopNames: true
 
