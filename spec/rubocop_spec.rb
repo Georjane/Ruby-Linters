@@ -1,4 +1,4 @@
-require './bin/rubocop'
+require './files.rb'
 
 # describe Naming do
 #   let(:file) { 'examples.rb' }
