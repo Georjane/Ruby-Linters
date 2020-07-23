@@ -49,6 +49,25 @@ describe Layout do
       end
     end
 
+describe Layout do
+  let(:file) { 'examples.rb' }
+  let(:lines_array) do
+    arr = []
+    File.readlines(file).each do |line|
+      arr << line.chomp!
+    end
+  end
+
+  describe '#empty_lines' do
+    context 'checks when there are two or more empty lines consecutively' do
+      it 'detects two or more empty lines and returns an error message' do
+        array = []
+        layout_check = Layout.new(nil, file, nil)
+        lines_array.each_with_index { |x, index| array << index if x.split.empty? }
+        expect(layout_check.empty_lines(array)).to eq('examples.rb'.blue + ':' + array[1].to_s + ':1:' + ' C'.yellow + ": Layout/EmptyLines: Extra blank line detected.\n\n")
+      end
+    end
+
     context 'When there is just one empty line' do
       # fails because test file "example.test" has more than one emptyline, if we re4move empty lines in example.rb, this test will pass
       it 'does not return an error message' do

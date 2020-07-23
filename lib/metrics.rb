@@ -1,4 +1,5 @@
 class Metrics < Department
+  private
   def block_length(def_hash, end_hash)
     @max = 10
     length, final, y = Array.new(3) { [] }

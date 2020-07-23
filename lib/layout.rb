@@ -9,5 +9,4 @@ class Layout < Department
     end
   end
 
-  def empty_line_between_defs; end
 end
