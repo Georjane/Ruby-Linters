@@ -50,14 +50,14 @@ describe Layout do
       end
     end
 
-    context 'When there is just one empty line' do
-      # fails because test file "example.test" has more than one emptyline, if we re4move empty lines in example.rb, this test will pass
-      # it 'does not return an error message' do
-      #   array = []
-      #   layout_check = Layout.new(nil, file, nil)
-      #   lines_array.each_with_index { |x, index| array << index if x.split.empty? }
-      #   expect(layout_check.empty_lines(array)).to be_nil
-      # end
-    end
+    # context 'When there is just one empty line' do
+    #   # fails because test file "example.test" has more than one emptyline, if we re4move empty lines in example.rb, this test will pass
+    #   # it 'does not return an error message' do
+    #   #   array = []
+    #   #   layout_check = Layout.new(nil, file, nil)
+    #   #   lines_array.each_with_index { |x, index| array << index if x.split.empty? }
+    #   #   expect(layout_check.empty_lines(array)).to be_nil
+    #   # end
+    # end
   end
 end
