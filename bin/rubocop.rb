@@ -38,4 +38,4 @@ def rubocop
   puts '1 file inspected, ' + 'offenses'.red + ' detected'
 end
 
-rubocop
+# rubocop
