@@ -15,6 +15,19 @@ describe Naming do
     end
   end
 
+  describe '#class_name and #module_name' do
+    it 'checks if clas and module names are in CamelCase' do
+      test = "GoodModuleName"
+      good_camel_case = /^[A-Z][A-Za-z\d]+$/
+      expect(test).to match(good_camel_case)
+    end
+
+    it 'checks if clas and module names are in CamelCase' do
+      test = "my_bad_class_name"
+      good_camel_case = /^[A-Z][A-Za-z\d]+$/
+      expect(test).to_not match(good_camel_case)
+    end
+  end
 end
 
 describe Layout do
