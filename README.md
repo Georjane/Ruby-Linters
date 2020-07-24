@@ -34,18 +34,13 @@
 <h3 align="center">
 This is a code linter like Rubocop that trawls through your code files and finds problems, such as methods with too many lines, code style violations, or common gotchas.</h3>
 
-
 ---
 
 ## 🔧 Built with<a name = "builtwith"></a>
 
-
-
 - [Ruby](https://rubyonrails.org/)
+- RSpec for Ruby Testing
 
-## 🔴 Live Demo
-
-[rubocop]()
 
 ## 🛠 Installing <a name = "installing"></a>
 
@@ -69,10 +64,23 @@ Type in the following command to run the linter on a test file
 bin/rubocop
 ```
 ### Testing
-Test class methods using RSpec by running the command
+Test class methods using RSpec by running the command in the root directory 
 ```
 rspec
 ```
+But before testing using RSpec you can install the gem file by running the command
+```
+$ bundle install 
+```
+Also make sure you have bundler installed on your system, else run
+```
+$ gem install bundler 
+```
+or you simply install the the following directly using
+```
+$ gem install rspec 
+```
+
 # Style Guide <a name = "styleguide"></a>
 ## 1. Department Naming
 
