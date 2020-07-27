@@ -1,4 +1,4 @@
-require_relative 'files.rb'
+require './lib/files.rb'
 
 describe Naming do
   describe '#var_name and #method_name' do
@@ -31,7 +31,7 @@ describe Naming do
 end
 
 describe Layout do
-  let(:file) { 'examples.rb' }
+  let(:file) { 'spec/mock-test/examples.rb' }
   let(:lines_array) do
     arr = []
     File.readlines(file).each do |line|
@@ -45,7 +45,7 @@ describe Layout do
         array = []
         layout_check = Layout.new(nil, file, nil)
         lines_array.each_with_index { |x, index| array << index if x.split.empty? }
-        expect(layout_check.empty_lines(array)).to eq('examples.rb'.blue + ':' + array[1].to_s + ':1:' + ' C'.yellow + ": Layout/EmptyLines: Extra blank line detected.\n\n")
+        expect(layout_check.empty_lines(array)).to eq('spec/mock-test/examples.rb'.blue + ':' + array[1].to_s + ':1:' + ' C'.yellow + ": Layout/EmptyLines: Extra blank line detected.\n\n")
       end
     end
 

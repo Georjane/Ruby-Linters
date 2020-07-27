@@ -1,8 +1,8 @@
-require_relative 'lib/department.rb'
-require_relative 'lib/naming.rb'
-require_relative 'lib/metrics.rb'
-require_relative 'lib/layout.rb'
-require_relative 'lib/colors.rb'
+require_relative 'department.rb'
+require_relative 'naming.rb'
+require_relative 'metrics.rb'
+require_relative 'layout.rb'
+require_relative 'colors.rb'
 
 def get_file(file)
   line_num = 1
@@ -18,7 +18,7 @@ def get_file(file)
   end
   layout_check = Layout.new(nil, file, line_num)
   print layout_check.empty_lines(arr)
-  get_file_metrics(file)
+  print get_file_metrics(file)
 end
 
 def get_file_metrics(file)
