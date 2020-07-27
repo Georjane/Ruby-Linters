@@ -15,4 +15,4 @@ def rubocop(filename)
   end
 end
 
- rubocop('bin/bug_file/test.rb')
+rubocop('bin/bug_file/test.rb')

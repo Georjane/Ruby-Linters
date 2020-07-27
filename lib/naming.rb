@@ -39,7 +39,7 @@ class Naming < Department
     error_message + ": Naming/ClassAndModuleCamelCase: Use CamelCase for classes and modules.\n" + line + "\n"
   end
 
-  private  
+  private
 
   def error_index_snake_case
     @error_index = ((line =~ bad_snake_case) + 1)

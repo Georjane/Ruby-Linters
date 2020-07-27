@@ -48,6 +48,5 @@ describe Layout do
         expect(layout_check.empty_lines(array)).to eq('spec/mock-test/examples.rb'.blue + ':' + array[1].to_s + ':1:' + ' C'.yellow + ": Layout/EmptyLines: Extra blank line detected.\n\n")
       end
     end
-
   end
 end
