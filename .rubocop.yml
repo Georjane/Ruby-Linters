@@ -2,13 +2,19 @@ AllCops:
   Exclude:
     - "Guardfile"
     - "Rakefile"
+    - "lib/colors.rb"
+    - "bin/bug_file/test.rb"
+    - "spec/mock-test/examples.rb"
+
 
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 120
+  Max: 190
 Metrics/MethodLength:
-  Max: 20
+  Max: 22
+Metrics/CyclomaticComplexity:
+  Max: 10
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
@@ -16,7 +22,8 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   ExcludedMethods: ['describe']
   Max: 30
-
+Metrics/PerceivedComplexity:
+  Max: 10
 
 Style/Documentation:
   Enabled: false
