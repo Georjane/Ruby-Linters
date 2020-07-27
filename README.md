@@ -61,7 +61,7 @@ cd Ruby-Linters
 
 Type in the following command to run the linter on a test file
 ```
-ruby bin/rubocop
+ruby bin/main.rb
 ```
 ### Testing
 Test class methods using RSpec by running the command in the root directory 
